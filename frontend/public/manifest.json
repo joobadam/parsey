@@ -1,0 +1,16 @@
+{
+  "name": "Parsey",
+  "short_name": "Parsey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6f2",
+  "theme_color": "#FF6B35",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
