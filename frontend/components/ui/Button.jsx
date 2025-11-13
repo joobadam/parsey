@@ -13,7 +13,7 @@ export function Button({
   const baseStyles = "inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
   
   const variants = {
-    primary: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary)]/90 focus:ring-[var(--color-primary)] shadow-sm hover:shadow-md",
+    primary: "bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary)]/90 focus:ring-[var(--color-primary)] shadow-red hover:shadow-red-lg",
     secondary: "bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white focus:ring-[var(--color-primary)]",
     outline: "bg-transparent border-2 border-[var(--color-card-border)] text-[var(--color-foreground)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] focus:ring-[var(--color-primary)]",
   };
@@ -45,4 +45,3 @@ export function Button({
     </button>
   );
 }
-

@@ -7,11 +7,11 @@
 @theme {
   --color-primary: #FF6B35;
   --color-secondary: #00ff00;
-  --color-background: #faf6f2;
+  --color-background: #F9F5F3;
   --color-foreground: #171717;
   --color-foreground-secondary: #6b6b6f;
   --color-card-border: #e8e2db;
-  --color-success: #34d399;
+  --color-success: #90D5FF;
 
   --primary: var(--color-primary);
   --secondary: var(--color-secondary);
@@ -48,6 +48,22 @@
     max-width: 80rem;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .shadow-orange {
+    box-shadow: 0 4px 14px 0 rgba(255, 107, 53, 0.25);
+  }
+
+  .shadow-orange-lg {
+    box-shadow: 0 8px 24px 0 rgba(255, 107, 53, 0.3);
+  }
+
+  .shadow-red {
+    box-shadow: 0 4px 14px 0 rgba(208, 17, 17, 0.994);
+  }
+
+  .shadow-red-lg {
+    box-shadow: 0 8px 24px 0 rgba(239, 68, 68, 0.3);
   }
 
   @media (min-width: 640px) {
@@ -221,16 +237,19 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar-background: 0 0% 100%;
+  --sidebar-foreground: 222.2 84% 4.9%;
+  --sidebar-primary: 15 85% 55%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 15 85% 55%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 15 85% 55%;
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-width: 16rem;
+  --sidebar-width-icon: 3rem;
 }
-
+/*dark mode még kérdéses */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -255,14 +274,15 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar-background: 222.2 84% 4.9%;
+  --sidebar-foreground: 210 40% 96%;
+  --sidebar-primary: 15 85% 55%;
+  --sidebar-primary-foreground: 222.2 47.4% 11.2%;
+  --sidebar-accent: 217.2 32.6% 17.5%;
+  --sidebar-accent-foreground: 210 40% 96%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 15 85% 55%;
   --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
 }
 
 @layer base {

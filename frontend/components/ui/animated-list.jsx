@@ -66,7 +66,7 @@ function NotificationCard({ name, description, icon, color, time }) {
   return (
     <figure
       className={cn(
-        "relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl p-4",
+        "relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl py-1 px-2",
         "transition-all duration-200 ease-in-out hover:scale-[103%]",
         "bg-white/10 backdrop-blur-md border border-white/20",
         "[box-shadow:0_0_0_1px_rgba(255,255,255,.1),0_2px_4px_rgba(0,0,0,.1),0_12px_24px_rgba(0,0,0,.1)]",

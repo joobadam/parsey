@@ -8,7 +8,7 @@ export function Card({
   onClick,
   ...props 
 }) {
-  const baseStyles = "bg-white rounded-xl border border-[var(--color-card-border)] p-6 transition-all duration-200 hover:shadow-lg";
+  const baseStyles = "bg-white rounded-xl border border-[var(--color-card-border)] p-6 transition-all duration-200 shadow-orange hover:shadow-orange-lg";
   
   const classes = cn(baseStyles, className);
 
@@ -32,6 +32,33 @@ export function Card({
     <div className={classes} {...props}>
       {children}
     </div>
+  );
+}
+
+export function CardHeader({ className, ...props }) {
+  return (
+    <div
+      className={cn("flex flex-col space-y-1.5 pb-4", className)}
+      {...props}
+    />
+  );
+}
+
+export function CardTitle({ className, ...props }) {
+  return (
+    <h3
+      className={cn("text-lg font-semibold leading-none tracking-tight text-[#171717]", className)}
+      {...props}
+    />
+  );
+}
+
+export function CardContent({ className, ...props }) {
+  return (
+    <div
+      className={cn("pt-0", className)}
+      {...props}
+    />
   );
 }
 
